@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { api } from "../utils/Api";
+import { api } from "../utils/api"
 import Card from "./Card";
 
 function Main(props) {
@@ -8,7 +8,7 @@ function Main(props) {
     const [ userName, setUserName ] = useState('');
     const [ userDescription, setUserDecsription ] = useState('');
     const [ userAvatar, setUserAvatar ] = useState('');
-    const [cards, setCards] = useState([]);
+    const [ cards, setCards ] = useState([]);
     
     React.useEffect(() => {
         api.getUserInfo()
